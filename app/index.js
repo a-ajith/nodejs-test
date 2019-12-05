@@ -32,7 +32,7 @@ app.use(({ query: { message, secret }, path }, res, next) => {
 })
 
 app.get('/encrypt', ({ query }, res) => {
-  res.send(encrypt(query));
+  res.send(query);
 });
 
 app.get('/decrypt', ({ query }, res) => {
