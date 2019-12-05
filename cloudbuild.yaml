@@ -10,7 +10,7 @@ steps:
   - image
   - deployment
   - my-app-deployment
-  - my-app-deployment=gcr.io/$PROJECT_ID/my-app-deployment:1.0.$BUILD_ID
+  - my-app=gcr.io/$PROJECT_ID/my-app-deployment:1.0.$BUILD_ID
   env:
   - 'CLOUDSDK_COMPUTE_ZONE=us-central1-a'
   - 'CLOUDSDK_CONTAINER_CLUSTER=my-webapp'
